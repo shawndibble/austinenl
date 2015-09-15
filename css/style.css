@@ -398,7 +398,7 @@ background: #FFFFFF !important;
 .banner {
   position: relative;
   width: 100% !important;
-  overflow: auto;
+  overflow: visible;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -848,12 +848,16 @@ margin-top: -25px;
   margin: auto;
 }
 
+.info {
+    margin-top: 1em;
+}
+
 .info-strong {
   font-size: 4em;
 }
 
 .info-x {
-  font-size: 1.95em;
+  margin-top: 2.5em;
 }
 
 .email {

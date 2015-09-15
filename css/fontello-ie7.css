@@ -2,14 +2,14 @@
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
- 
+
   /* fix buttons height */
   line-height: 1em;
- 
+
   /* you can be more comfortable with increased icons size */
-  font-size: 500%;
+  font-size: 150%;
 }
- 
+
 .angle-double-upelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .walletelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe843;&nbsp;'); }
 .downelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
@@ -27,7 +27,7 @@
 .left-circledelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
 .right-circledelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;'); }
 .up-circledelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;'); }
-.down-circledelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); }
+.down-circledelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); vertical-align: middle;}
 .cwelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe813;&nbsp;'); }
 .ccwelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe814;&nbsp;'); }
 .to-start-altelegance-icons- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe817;&nbsp;'); }
