@@ -2,7 +2,7 @@
 * Elegance - Onepahe HTML Template
 * Author    : Carino Technologies
 * url       : https:// carinotech.com
-* versions  : v 1.0.0 
+* versions  : v 1.0.0
 */
 
 /*******************************************
@@ -323,7 +323,7 @@ margin: auto;
 
 /********************************************
 
-* Navigation 
+* Navigation
 
 *********************************************/
 .navbar {
@@ -346,7 +346,7 @@ margin: auto;
 }
 
 .banner--clone {
-  opacity: 0.8;
+  opacity: 0.9;
 background: #FFFFFF !important;
 }
 
@@ -476,6 +476,28 @@ background: #FFFFFF !important;
   bottom: 3.75em;
 }
 
+
+/*******************************************
+
+* YouTube Video
+
+********************************************/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 /*******************************************
 
 * Testimonials
@@ -561,7 +583,7 @@ background: #FFFFFF !important;
   .cbp-qtrotator {
     font-size: 70%;
   }
-  
+
   .cbp-qtrotator img {
     width: 80px;
   }
@@ -581,7 +603,7 @@ background: #FFFFFF !important;
 #Grid .mix {
   display: none;
   opacity: 0;
-  width: 33.3333333333%;
+  width: 33.33%;
   vertical-align: top;
   background: #CCC;
   color: #FFF;
@@ -656,6 +678,10 @@ background: #FFFFFF !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#Grid img {
+  width:100%;
 }
 
 /******************************
@@ -889,7 +915,7 @@ margin-top: -25px;
 
 /***************************************
 
-* Contact us 
+* Contact us
 
 ***************************************/
 .contact-col {
@@ -925,7 +951,7 @@ margin-top: -25px;
 
 /*********************************************
 
-* footer section 
+* footer section
 
 *********************************************/
 .footer {
