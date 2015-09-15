@@ -74,6 +74,12 @@ a {
   cursor: pointer;
   color: #48A65B;
   text-decoration: none;
+  border-bottom: dotted 1px #48A65B
+}
+
+a:hover {
+  color: white;
+  border-bottom: dotted 1px white;
 }
 
 
@@ -383,6 +389,10 @@ background: #FFFFFF !important;
 
 .logo {
   margin-top: 0;
+}
+
+.logo a {
+  border-bottom: 0;
 }
 
 /***************************************************
@@ -868,6 +878,11 @@ margin-top: -25px;
 
 .social-icons {
   color: #ECF0F1;
+  border:0;
+}
+
+.social-icons:hover {
+  border:0;
 }
 
 .circule-info {

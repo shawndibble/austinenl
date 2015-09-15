@@ -1,8 +1,8 @@
 $('#input-form').on('submit',function(){
     var areas = [];
-    $(':checkbox:checked').each(function(i)){
+    $(':checkbox:checked').each(function(i){
       areas[i] = $(this).val();
-    }
+    });
     var handle = encodeURIComponent($('#handle').val());
     var gplus = encodeURIComponent($('#gplus').val());
     var email = encodeURIComponent($('#email').val());
@@ -22,7 +22,8 @@ $('#input-form').on('submit',function(){
                               areaID + "=" + area + "&" +
                               commentID + "=" + comment + "&" +
                               submitRef);
-    console.log(submitURL);
     $(this)[0].action=submitURL;
-    $('#w-form-done').show().delay(5000).fadeOut();;
+    $('input, textarea').val('');
+    $('input:checkbox').removeAttr('checked');
+    $('.w-form-done').fadeIn().delay(5000).fadeOut();;
 });
