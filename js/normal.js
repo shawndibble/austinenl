@@ -20,7 +20,7 @@ elegance.init = function () {
 
   'use strict';
 
-  
+
 
   var $ = window.$;
 
@@ -38,7 +38,7 @@ elegance.init = function () {
 
   var domready = false;
 
-  
+
 
   /**
 
@@ -82,7 +82,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   /**
 
@@ -100,7 +100,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   /**
 
@@ -128,7 +128,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   /**
 
@@ -156,7 +156,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   // Feature detects + browser sniffs  ಠ_ಠ
 
@@ -166,7 +166,7 @@ elegance.init = function () {
 
   api.env.chrome = /chrome|crios/i.test(ua);
 
-  
+
 
   /**
 
@@ -190,7 +190,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   /**
 
@@ -256,7 +256,7 @@ elegance.init = function () {
 
   }();
 
-  
+
 
   // Wrap window.location in api
 
@@ -266,7 +266,7 @@ elegance.init = function () {
 
   };
 
-  
+
 
   // Designer-specific methods
 
@@ -298,7 +298,7 @@ elegance.init = function () {
 
   }
 
-  
+
 
   // DOM ready - Call primary and secondary handlers
 
@@ -318,7 +318,7 @@ elegance.init = function () {
 
   });
 
-  
+
 
   /*!
 
@@ -346,7 +346,7 @@ elegance.init = function () {
 
    * _.has
 
-   * 
+   *
 
    * http://underscorejs.org
 
@@ -360,13 +360,13 @@ elegance.init = function () {
 
     var _ = {};
 
-    
+
 
     // Current version.
 
     _.VERSION = '1.5.2-elegance';
 
-    
+
 
     // Establish the object that gets returned to break out of a loop iteration.
 
@@ -378,7 +378,7 @@ elegance.init = function () {
 
     var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
 
-    
+
 
     // Create quick reference variables for speed access to core prototypes.
 
@@ -394,7 +394,7 @@ elegance.init = function () {
 
       hasOwnProperty   = ObjProto.hasOwnProperty;
 
-    
+
 
     // All **ECMAScript 5** native function implementations that we hope to use
 
@@ -426,13 +426,13 @@ elegance.init = function () {
 
       nativeBind         = FuncProto.bind;
 
-    
+
 
     // Collection Functions
 
     // --------------------
 
-    
+
 
     // The cornerstone, an `each` implementation, aka `forEach`.
 
@@ -472,7 +472,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Return the results of applying the iterator to each element.
 
@@ -496,7 +496,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Return all the elements that pass a truth test.
 
@@ -522,7 +522,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Determine if at least one element in the object matches a truth test.
 
@@ -550,7 +550,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Determine if the array or object contains a given value (using `===`).
 
@@ -570,13 +570,13 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Function (ahem) Functions
 
     // --------------------
 
-    
+
 
     // Delays a function for the given number of milliseconds, and then calls
 
@@ -602,7 +602,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Returns a function, that, when invoked, will only be triggered once every
 
@@ -634,7 +634,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Returns a function, that, as long as it continues to be invoked, will not
 
@@ -690,7 +690,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Object Functions
 
@@ -714,7 +714,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Shortcut function for checking if an object has a given property directly
 
@@ -726,7 +726,7 @@ elegance.init = function () {
 
     };
 
-    
+
 
     // Export underscore
 
@@ -734,7 +734,7 @@ elegance.init = function () {
 
   }
 
-    
+
 
   // Export api
 
@@ -998,7 +998,7 @@ elegance.define('elegance-touch', function ($, _) {
 
   'use strict';
 
-  
+
 
   var Tap = window.Tap;
 
@@ -1008,7 +1008,7 @@ elegance.define('elegance-touch', function ($, _) {
 
   var fallback = !document.addEventListener;
 
-  
+
 
   // jQuery event "tap" - use click in old + non-touch browsers
 
@@ -1048,19 +1048,19 @@ elegance.define('elegance-touch', function ($, _) {
 
   };
 
-  
+
 
   // No swipe events for old browsers
 
   if (fallback || !Object.create) return;
 
-  
+
 
   // jQuery event "swipe"
 
   dataKey = namespace + 'swipe';
 
-  
+
 
   $.event.special.swipe = {
 
@@ -1098,7 +1098,7 @@ elegance.define('elegance-touch', function ($, _) {
 
   };
 
-  
+
 
   /**
 
@@ -1112,7 +1112,7 @@ elegance.define('elegance-touch', function ($, _) {
 
   }
 
-  
+
 
   (function () {
 
@@ -1124,7 +1124,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     if (threshold > 40) threshold = 40;
 
-    
+
 
     proto.start = function (e) {
 
@@ -1142,7 +1142,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     };
 
-    
+
 
     proto.move = _.throttle(function (e) {
 
@@ -1162,7 +1162,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     });
 
-    
+
 
     proto.end = function (e) {
 
@@ -1180,7 +1180,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     };
 
-    
+
 
     proto.destroy = function () {
 
@@ -1190,7 +1190,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     };
 
-    
+
 
     proto.cancel = function () {
 
@@ -1204,7 +1204,7 @@ elegance.define('elegance-touch', function ($, _) {
 
     };
 
-    
+
 
     proto.handleEvent = function (e) {
 
@@ -1216,538 +1216,9 @@ elegance.define('elegance-touch', function ($, _) {
 
   }());
 
-  
+
 
 });
-
-/**
-
- * ----------------------------------------------------------------------
-
- * elegance: Forms
-
- */
-
-elegance.define('elegance-forms', function ($, _) {
-
-  'use strict';
-
-  
-
-  var api = {};
-
-  var $doc = $(document);
-
-  var $forms;
-
-  var loc = window.location;
-
-  var retro = window.XDomainRequest && !window.atob;
-
-  var namespace = '.w-form';
-
-  var siteId;
-
-  var emailField = /e(\-)?mail/i;
-
-  var emailValue = /^\S+@\S+$/;
-
-  
-
-  // MailChimp domains: list-manage.com + mirrors
-
-  var chimpRegex = /list-manage[1-9]?.com/i;
-
-  
-
-  api.ready = function () {
-
-    // Init forms
-
-    init();
-
-    
-
-    // Wire events
-
-    listen && listen();
-
-    listen = null;
-
-  };
-
-  
-
-  api.preview = api.design = function () {
-
-    init();
-
-  };
-
-  
-
-  function init() {
-
-    siteId = $('html').attr('data-wf-site');
-
-    
-
-    $forms = $(namespace + ' form');
-
-    $forms.each(build);
-
-  }
-
-  
-
-  function build(i, el) {
-
-    // Store form state using namespace
-
-    var $el = $(el);
-
-    var data = $.data(el, namespace);
-
-    if (!data) data = $.data(el, namespace, { form: $el }); // data.form
-
-    
-
-    reset(data);
-
-    var wrap = $el.closest('div.w-form');
-
-    data.done = wrap.find('> .w-form-done');
-
-    data.fail = wrap.find('> .w-form-fail');
-
-    
-
-    var action = data.action = $el.attr('action');
-
-    data.handler = null;
-
-    data.redirect = $el.attr('data-redirect');
-
-    
-
-    // MailChimp form
-
-    if (chimpRegex.test(action)) { data.handler = submitMailChimp; return; }
-
-    
-
-    // Custom form action
-
-    if (action) return;
-
-    
-
-    // elegance form
-
-    if (siteId) { data.handler = submitelegance; return; }
-
-    
-
-    // Alert for disconnected elegance forms
-
-    disconnected();
-
-  }
-
-  
-
-  function listen() {
-
-    // Handle form submission for elegance forms
-
-    $doc.on('submit', namespace + ' form', function(evt) {
-
-      var data = $.data(this, namespace);
-
-      if (data.handler) {
-
-        data.evt = evt;
-
-        data.handler(data);
-
-      }
-
-    });
-
-  }
-
-  
-
-  // Reset data common to all submit handlers
-
-  function reset(data) {
-
-    var btn = data.btn = data.form.find(':input[type="submit"]');
-
-    data.wait = data.btn.attr('data-wait') || null;
-
-    data.success = false;
-
-    btn.prop('disabled', false);
-
-    data.label && btn.val(data.label);
-
-  }
-
-  
-
-  // Disable submit button
-
-  function disableBtn(data) {
-
-    var btn = data.btn;
-
-    var wait = data.wait;
-
-    btn.prop('disabled', true);
-
-    // Show wait text and store previous label
-
-    if (wait) {
-
-      data.label = btn.val();
-
-      btn.val(wait);
-
-    }
-
-  }
-
-  
-
-  // Find form fields, validate, and set value pairs
-
-  function findFields(form, result) {
-
-    var status = null;
-
-    result = result || {};
-
-    form.find(':input:not([type="submit"])').each(function(i, el) {
-
-      var field = $(el);
-
-      var name = field.attr('data-name') || field.attr('name') || ('Field ' + (i + 1));
-
-      var value = field.val();
-
-      if (typeof value == 'string') value = $.trim(value);
-
-      result[name] = value;
-
-      status = status || getStatus(field, name, value);
-
-    });
-
-    return status;
-
-  }
-
-  
-
-  function getStatus(field, name, value) {
-
-    var status = null;
-
-    if (!field.attr('required')) return null;
-
-    if (!value) status = 'Please fill out the required field: ' + name;
-
-    else if (emailField.test(name) || emailField.test(field.attr('type'))) {
-
-      if (!emailValue.test(value)) status = 'Please enter a valid email address for: ' + name;
-
-    }
-
-    return status;
-
-  }
-
-  
-
-  // Submit form to elegance
-
-  function submitelegance(data) {
-
-    reset(data);
-
-    
-
-    var form = data.form;
-
-    var payload = {
-
-      name: form.attr('data-name') || form.attr('name') || 'Untitled Form',
-
-      source: loc.href,
-
-      test: elegance.env(),
-
-      fields: {}
-
-    };
-
-    
-
-    preventDefault(data);
-
-    
-
-    // Find & populate all fields
-
-    var status = findFields(form, payload.fields);
-
-    if (status) return alert(status);
-
-    
-
-    // Disable submit button
-
-    disableBtn(data);
-
-
-
-    // Read site ID
-
-    // NOTE: If this site is exported, the HTML tag must retain the data-wf-site attribute for forms to work
-
-    if (!siteId) { afterSubmit(data); return; }
-
-    var url = 'https://elegance.com/api/v1/form/' + siteId;
-
-
-
-    // Work around same-protocol IE XDR limitation
-
-    if (retro && url.indexOf('https://elegance.com') >= 0) {
-
-      url = url.replace('https://elegance.com/', 'http://data.elegance.com/');
-
-    }
-
-    
-
-    $.ajax({
-
-      url: url,
-
-      type: 'POST',
-
-      data: payload,
-
-      dataType: 'json',
-
-      crossDomain: true
-
-    }).done(function () {
-
-      data.success = true;
-
-      afterSubmit(data);
-
-    }).fail(function () {
-
-      afterSubmit(data);
-
-    });
-
-  }
-
-  
-
-  // Submit form to MailChimp
-
-  function submitMailChimp(data) {
-
-    reset(data);
-
-    
-
-    var form = data.form;
-
-    var payload = {};
-
-    
-
-    // Skip Ajax submission if http/s mismatch, fallback to POST instead
-
-    if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
-
-      form.attr('method', 'post');
-
-      return;
-
-    }
-
-    
-
-    preventDefault(data);
-
-    
-
-    // Find & populate all fields
-
-    var status = findFields(form, payload);
-
-    if (status) return alert(status);
-
-    
-
-    // Disable submit button
-
-    disableBtn(data);
-
-    
-
-    // Use special format for MailChimp params
-
-    var fullName;
-
-    _.each(payload, function (value, key) {
-
-      if (emailField.test(key)) payload.EMAIL = value;
-
-      if (/^(name|full(\-)?name)$/i.test(key)) fullName = value;
-
-      if (/^(first(\-)?name)$/i.test(key)) payload.FNAME = value;
-
-      if (/^(last(\-)?name)$/i.test(key)) payload.LNAME = value;
-
-    });
-
-    if (fullName && !payload.FNAME) {
-
-      fullName = fullName.split(' ');
-
-      payload.FNAME = fullName[0];
-
-      payload.LNAME = payload.LNAME || fullName[1];
-
-    }
-
-    
-
-    // Use the (undocumented) MailChimp jsonp api
-
-    var url = data.action.replace('/post?', '/post-json?') + '&c=?';
-
-    // Add special param to prevent bot signups
-
-    var userId = url.indexOf('u=')+2;
-
-    userId = url.substring(userId, url.indexOf('&', userId));
-
-    var listId = url.indexOf('id=')+3;
-
-    listId = url.substring(listId, url.indexOf('&', listId));
-
-    payload['b_' + userId + '_' + listId] = '';
-
-    
-
-    $.ajax({
-
-      url: url,
-
-      data: payload,
-
-      dataType: 'jsonp'
-
-    }).done(function (resp) {
-
-      data.success = (resp.result == 'success' || /already/.test(resp.msg));
-
-      if (!data.success) console.info('MailChimp error: ' + resp.msg);
-
-      afterSubmit(data);
-
-    }).fail(function () {
-
-      afterSubmit(data);
-
-    });
-
-  }
-
-  
-
-  // Common callback which runs after all Ajax submissions
-
-  function afterSubmit(data) {
-
-    var form = data.form;
-
-    var wrap = form.closest('div.w-form');
-
-    var redirect = data.redirect;
-
-    var success = data.success;
-
-    
-
-    // Redirect to a success url if defined
-
-    if (success && redirect) {
-
-      elegance.location(redirect);
-
-      return;
-
-    }
-
-    
-
-    // Show or hide status divs
-
-    data.done.toggleClass('w-form-done-show', success);
-
-    data.fail.toggleClass('w-form-fail-show', !success);
-
-    
-
-    // Hide form on success
-
-    success && form.addClass('w-hidden');
-
-    
-
-    // Reset data and enable submit button
-
-    reset(data);
-
-  }
-
-  
-
-  function preventDefault(data) {
-
-    data.evt && data.evt.preventDefault();
-
-    data.evt = null;
-
-  }
-
-  
-
-  var disconnected = _.debounce(function () {
-
-    window.alert('Oops! This page has a form that is powered by elegance, but important code was removed that is required to make the form work. Please contact support@elegance.com to fix this issue.');
-
-  }, 100);
-
-  
-
-  // Export module
-
-  return api;
-
-});
-
 /**
 
  * ----------------------------------------------------------------------
@@ -1760,7 +1231,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   'use strict';
 
-  
+
 
   var api = {};
 
@@ -1772,13 +1243,13 @@ elegance.define('elegance-maps', function ($, _) {
 
   var namespace = '.w-widget-map';
 
-  
+
 
   // -----------------------------------
 
   // App preview
 
-  
+
 
   api.preview = function () {
 
@@ -1800,7 +1271,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   };
 
-  
+
 
   api.design = function (evt) {
 
@@ -1818,7 +1289,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   };
 
-  
+
 
   function redrawMaps() {
 
@@ -1826,13 +1297,13 @@ elegance.define('elegance-maps', function ($, _) {
 
   }
 
-  
+
 
   // -----------------------------------
 
   // Site load
 
-  
+
 
   api.ready = function () {
 
@@ -1842,7 +1313,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   };
 
-  
+
 
   function initMaps() {
 
@@ -1872,7 +1343,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   }
 
-  
+
 
   // Render map onto each element
 
@@ -1884,7 +1355,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   }
 
-  
+
 
   // Resize map when window changes
 
@@ -1898,7 +1369,7 @@ elegance.define('elegance-maps', function ($, _) {
 
   }
 
-  
+
 
   // Store state on element data
 
@@ -1906,13 +1377,13 @@ elegance.define('elegance-maps', function ($, _) {
 
   function getState(el, data) {
 
-    
+
 
     var state = $.data(el, store);
 
     if (state) return state;
 
-    
+
 
     var $el = $(el);
 
@@ -1928,7 +1399,7 @@ elegance.define('elegance-maps', function ($, _) {
 
       zoom: 12,
 
-      
+
 
       // Marker
 
@@ -1938,7 +1409,7 @@ elegance.define('elegance-maps', function ($, _) {
 
       }),
 
-      
+
 
       // Tooltip infowindow
 
@@ -1950,7 +1421,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     });
 
-    
+
 
     // LatLng center point
 
@@ -1964,13 +1435,13 @@ elegance.define('elegance-maps', function ($, _) {
 
     state.latLngObj = latLngObj;
 
-    
+
 
     // Disable touch events
 
     var mapDraggable = (elegance.env.touch && data.disableTouch) ? false : true;
 
-    
+
 
     // Map instance
 
@@ -2006,7 +1477,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     state.marker.setMap(state.map);
 
-    
+
 
     // Set map position and offset
 
@@ -2038,7 +1509,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     };
 
-    
+
 
     // Fix position after first tiles have loaded
 
@@ -2050,7 +1521,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     });
 
-    
+
 
     // Set initial position
 
@@ -2060,7 +1531,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     state.infowindow.setPosition(state.latLngObj);
 
-    
+
 
     // Draw tooltip
 
@@ -2082,7 +1553,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     }
 
-    
+
 
     // Map style - options.style
 
@@ -2094,7 +1565,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     }
 
-    
+
 
     // Zoom - options.zoom
 
@@ -2108,7 +1579,7 @@ elegance.define('elegance-maps', function ($, _) {
 
     }
 
-    
+
 
     // Click marker to open in google maps
 
@@ -2118,13 +1589,13 @@ elegance.define('elegance-maps', function ($, _) {
 
     });
 
-    
+
 
     return state;
 
   }
 
-  
+
 
   // Export module
 
@@ -2144,13 +1615,13 @@ elegance.define('elegance-gplus', function ($) {
 
   'use strict';
 
-  
+
 
   var $doc = $(document);
 
   var api = {};
 
-  
+
 
   api.ready = function () {
 
@@ -2160,7 +1631,7 @@ elegance.define('elegance-gplus', function ($) {
 
   };
 
-  
+
 
   function init() {
 
@@ -2168,7 +1639,7 @@ elegance.define('elegance-gplus', function ($) {
 
   }
 
-  
+
 
   // Export module
 
@@ -2188,7 +1659,7 @@ elegance.define('elegance-scroll', function ($) {
 
   'use strict';
 
-  
+
 
   var $doc = $(document);
 
@@ -2198,7 +1669,7 @@ elegance.define('elegance-scroll', function ($) {
 
   var loc = win.location;
 
-  
+
 
   function ready() {
 
@@ -2222,13 +1693,13 @@ elegance.define('elegance-scroll', function ($) {
 
       }
 
-      
+
 
       // Ignore links being used by jQuery mobile
 
       if (window.$.mobile && $(e.currentTarget).hasClass('ui-link')) return;
 
-      
+
 
       var hash = this.hash ? this.hash.substring(1) : null;
 
@@ -2242,7 +1713,7 @@ elegance.define('elegance-scroll', function ($) {
 
   }
 
-  
+
 
   function findEl(hash, e) {
 
@@ -2292,7 +1763,7 @@ elegance.define('elegance-scroll', function ($) {
 
   }
 
-  
+
 
   function scroll(el, offset){
 
@@ -2306,7 +1777,7 @@ elegance.define('elegance-scroll', function ($) {
 
     var duration = 472.143 * Math.log(Math.abs(start - end) +125) - 2000;
 
-    
+
 
     var step = function() {
 
@@ -2330,7 +1801,7 @@ elegance.define('elegance-scroll', function ($) {
 
   }
 
-  
+
 
   function getY(start, end, elapsed, duration) {
 
@@ -2342,11 +1813,11 @@ elegance.define('elegance-scroll', function ($) {
 
 
 
-    return start + (end - start) * ease(elapsed / duration); 
+    return start + (end - start) * ease(elapsed / duration);
 
   }
 
-  
+
 
   function ease(t) {
 
@@ -2354,7 +1825,7 @@ elegance.define('elegance-scroll', function ($) {
 
   }
 
-  
+
 
   // Export module
 
@@ -2374,7 +1845,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   'use strict';
 
-  
+
 
   var api = {};
 
@@ -2394,13 +1865,13 @@ elegance.define('elegance-slider', function ($, _) {
 
   var fallback;
 
-  
+
 
   // -----------------------------------
 
   // Module methods
 
-  
+
 
   api.ready = function () {
 
@@ -2408,7 +1879,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   };
 
-  
+
 
   api.design = function () {
 
@@ -2418,7 +1889,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   };
 
-  
+
 
   api.preview = function () {
 
@@ -2428,13 +1899,13 @@ elegance.define('elegance-slider', function ($, _) {
 
   };
 
-  
+
 
   // -----------------------------------
 
   // Private methods
 
-  
+
 
   function init() {
 
@@ -2446,7 +1917,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     if (fallback) return;
 
-    
+
 
     // Wire events
 
@@ -2456,7 +1927,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function listen() {
 
@@ -2468,13 +1939,13 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function build(i, el) {
 
     var $el = $(el);
 
-    
+
 
     // Store slider state in data
 
@@ -2492,7 +1963,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     data.slides = data.mask.children('.w-slide');
 
-    
+
 
     // Disable in old browsers
 
@@ -2510,13 +1981,13 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Fix chrome rendering bug
 
     elegance.env.chrome && fixAttach(data);
 
-    
+
 
     // Remove old events
 
@@ -2528,13 +1999,13 @@ elegance.define('elegance-slider', function ($, _) {
 
     data.nav.off(namespace);
 
-    
+
 
     // Set config from data attributes
 
     configure(data);
 
-    
+
 
     // Add events based on mode
 
@@ -2558,13 +2029,13 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Listen to nav events
 
     data.nav.on('tap' + namespace, '> div', handler(data));
 
-    
+
 
     // Remove gaps from formatted html (for inline-blocks)
 
@@ -2578,7 +2049,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Run first render
 
@@ -2586,19 +2057,19 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function configure(data) {
 
     var config = {};
 
-    
+
 
     config.depth = 1;
 
     config.crossOver = 0;
 
-    
+
 
     // Set config options from data attributes
 
@@ -2614,17 +2085,17 @@ elegance.define('elegance-slider', function ($, _) {
 
     config.easing = data.el.attr('data-easing') || 'ease';
 
-    
+
 
     var duration = data.el.attr('data-duration');
 
     config.duration = duration != null ? +duration : 500;
 
-    
+
 
     if (+data.el.attr('data-infinite')) config.infinite = true;
 
-    
+
 
     if (+data.el.attr('data-hide-arrows')) {
 
@@ -2638,7 +2109,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     if (+data.el.attr('data-autoplay')) {
 
@@ -2658,7 +2129,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Use edge buffer to help calculate page count
 
@@ -2666,7 +2137,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     config.edge = arrowWidth ? arrowWidth + 40 : 100;
 
-    
+
 
     // Store config in data
 
@@ -2674,7 +2145,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function previous(data) {
 
@@ -2686,7 +2157,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function next(data) {
 
@@ -2698,7 +2169,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function select(data, value) {
 
@@ -2726,7 +2197,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function startTimer(data) {
 
@@ -2746,7 +2217,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function stopTimer(data) {
 
@@ -2758,7 +2229,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function killTimer(data) {
 
@@ -2770,7 +2241,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function handler(data) {
 
@@ -2778,7 +2249,7 @@ elegance.define('elegance-slider', function ($, _) {
 
       options = options || {};
 
-      
+
 
       // Designer settings
 
@@ -2800,7 +2271,7 @@ elegance.define('elegance-slider', function ($, _) {
 
       }
 
-      
+
 
       // Swipe event
 
@@ -2814,7 +2285,7 @@ elegance.define('elegance-slider', function ($, _) {
 
       }
 
-      
+
 
       // Page buttons
 
@@ -2828,7 +2299,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function change(data, options) {
 
@@ -2838,7 +2309,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     var anchors = data.anchors;
 
-    
+
 
     // Set new index
 
@@ -2884,7 +2355,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     data.index = index;
 
-    
+
 
     // Select page nav
 
@@ -2892,7 +2363,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     data.nav.children().not(active).removeClass('w-active');
 
-    
+
 
     // Hide arrows
 
@@ -2904,7 +2375,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Get page offset from anchors
 
@@ -2914,7 +2385,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     var resetConfig = { x: offsetX, opacity: 1, visibility: '' };
 
-    
+
 
     // Transition slides
 
@@ -2936,7 +2407,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     var slideRule = 'transform ' + duration + 'ms ' + easing;
 
-    
+
 
     // Set immediately after layout changes
 
@@ -2950,13 +2421,13 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Exit early if index is unchanged
 
     if (data.index == data.previous) return;
 
-    
+
 
     // Cross Fade / Out-In
 
@@ -2992,7 +2463,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Fade Over
 
@@ -3018,7 +2489,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Slide Over
 
@@ -3046,7 +2517,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Slide - infinite scroll
 
@@ -3070,7 +2541,7 @@ elegance.define('elegance-slider', function ($, _) {
 
       data.shifted = previous;
 
-      
+
 
     } else {
 
@@ -3082,7 +2553,7 @@ elegance.define('elegance-slider', function ($, _) {
 
       }
 
-      
+
 
       // Slide - basic scroll
 
@@ -3096,7 +2567,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Helper to move others out of view
 
@@ -3114,7 +2585,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function render(i, el) {
 
@@ -3126,7 +2597,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function layout(data) {
 
@@ -3170,7 +2641,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     data.endX = anchor;
 
-    
+
 
     // Build dots if nav exists and needs updating
 
@@ -3184,7 +2655,7 @@ elegance.define('elegance-slider', function ($, _) {
 
     }
 
-    
+
 
     // Make sure index is still within range and call change handler
 
@@ -3196,7 +2667,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function buildNav(data) {
 
@@ -3230,7 +2701,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function maskChanged(data) {
 
@@ -3248,7 +2719,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function slidesChanged(data) {
 
@@ -3272,7 +2743,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   function fixAttach(data) {
 
@@ -3290,7 +2761,7 @@ elegance.define('elegance-slider', function ($, _) {
 
   }
 
-  
+
 
   // Export module
 
@@ -3310,7 +2781,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   'use strict';
 
-  
+
 
   var api = {};
 
@@ -3340,13 +2811,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
   var linkCurrent = 'w--current';
 
-  
+
 
   // -----------------------------------
 
   // Module methods
 
-  
+
 
   api.ready = function () {
 
@@ -3354,7 +2825,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   };
 
-  
+
 
   api.design = function () {
 
@@ -3364,7 +2835,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   };
 
-  
+
 
   api.preview = function () {
 
@@ -3374,19 +2845,19 @@ elegance.define('elegance-navbar', function ($, _) {
 
   };
 
-  
+
 
   // -----------------------------------
 
   // Private methods
 
-  
+
 
   function init() {
 
     $body = $(document.body);
 
-    
+
 
     // Find all instances on the page
 
@@ -3394,7 +2865,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     $navbars.each(build);
 
-    
+
 
     // Wire events
 
@@ -3404,7 +2875,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function listen() {
 
@@ -3416,13 +2887,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function build(i, el) {
 
     var $el = $(el);
 
-    
+
 
     // Store state in data
 
@@ -3440,7 +2911,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     data.outside = outside(data);
 
-    
+
 
     // Remove old events
 
@@ -3448,13 +2919,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
     data.menu.off(namespace);
 
-    
+
 
     // Set config from data attributes
 
     configure(data);
 
-    
+
 
     // Add events based on mode
 
@@ -3474,13 +2945,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     // Select current section
 
     data.links.each(select);
 
-    
+
 
     // Trigger initial resize
 
@@ -3488,7 +2959,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function select(i, el) {
 
@@ -3502,7 +2973,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function removeOverlay(data) {
 
@@ -3516,7 +2987,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function addOverlay(data) {
 
@@ -3530,7 +3001,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function configure(data) {
 
@@ -3538,13 +3009,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
     var old = data.config || {};
 
-    
+
 
     // Set config options from data attributes
 
     config.animation = data.el.attr('data-animation') || 'default';
 
-    
+
 
     // Re-open menu if the animation type changed
 
@@ -3554,19 +3025,19 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     config.easing = data.el.attr('data-easing') || 'ease';
 
     config.easing2 = data.el.attr('data-easing2') || 'ease';
 
-    
+
 
     var duration = data.el.attr('data-duration');
 
     config.duration = duration != null ? +duration : 400;
 
-    
+
 
     // Store config in data
 
@@ -3574,7 +3045,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function handler(data) {
 
@@ -3582,7 +3053,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
       options = options || {};
 
-      
+
 
       // Designer settings
 
@@ -3612,7 +3083,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function closeEach(i, el) {
 
@@ -3622,7 +3093,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function reopen(data) {
 
@@ -3634,7 +3105,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function toggle(data) {
 
@@ -3670,7 +3141,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function outside(data) {
 
@@ -3688,7 +3159,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function resize(i, el) {
 
@@ -3708,7 +3179,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   var maxWidth = 'max-width';
 
@@ -3732,7 +3203,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function open(data, immediate) {
 
@@ -3768,13 +3239,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
     resize(0, data.el[0]);
 
-    
+
 
     // Listen for tap outside events
 
     if (!designer) $doc.on('tap' + namespace, data.outside);
 
-    
+
 
     // Update menu height for Over state
 
@@ -3786,17 +3257,17 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     // No transition for immediate
 
     if (immediate) return;
 
-    
+
 
     var transConfig = 'transform ' + config.duration + 'ms ' + config.easing;
 
-    
+
 
     // Add menu to overlay
 
@@ -3810,7 +3281,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     // Over left/right
 
@@ -3828,7 +3299,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     // Drop Down
 
@@ -3842,7 +3313,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   function close(data, immediate) {
 
@@ -3856,13 +3327,13 @@ elegance.define('elegance-navbar', function ($, _) {
 
     var animation = config.animation;
 
-    
+
 
     // Stop listening for tap outside events
 
     $doc.off('tap' + namespace, data.outside);
 
-    
+
 
     if (immediate) {
 
@@ -3874,7 +3345,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     var transConfig = 'transform ' + config.duration + 'ms ' + config.easing2;
 
@@ -3888,7 +3359,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     var animOver = /^over/.test(animation);
 
-    
+
 
     // Over left/right
 
@@ -3904,7 +3375,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
     }
 
-    
+
 
     // Drop Down
 
@@ -3916,7 +3387,7 @@ elegance.define('elegance-navbar', function ($, _) {
 
       .start({ y: -offsetY }).then(complete);
 
-    
+
 
     function complete() {
 
@@ -3942,11 +3413,10 @@ elegance.define('elegance-navbar', function ($, _) {
 
   }
 
-  
+
 
   // Export module
 
   return api;
 
 });
-

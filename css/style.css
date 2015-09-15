@@ -975,8 +975,39 @@ margin-top: -25px;
   text-align: center;
 }
 
+.checkbox-section {
+  background-color: rgb(52, 73, 94);
+  margin-bottom: 10px;
+  border: 1px solid #34495E;
+}
+
+.checkbox-section label {
+  font-weight: normal;
+  text-align: left;
+  font-style: italic;
+  padding-left: .8em;
+  color: #999;
+  font-size: 97%;
+}
+
+.area-checkboxes {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.area-checkbox {
+  padding: 0 10px;
+  flex-basis: 1;
+  width: 220px;
+  text-align: left;
+}
+
 .message {
-  height: 200px !important;
+  height: 100px !important;
 }
 
 .social-footter {

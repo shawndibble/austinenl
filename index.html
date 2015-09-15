@@ -408,27 +408,48 @@
 
           <div class="w-form">
 
-            <form action="contact.php" method="post">
+            <form action="" id="input-form" target="no-target" method="post">
 
             <label for="handle"></label>
 
-             <input class="w-input" type="text" id="handle" placeholder="Enter your in-game handle" name="cf_handle">
+             <input class="w-input" type="text" id="handle" placeholder="Enter your in-game handle" name="handle">
 
              <label for="name"></label>
 
-              <input class="w-input" type="text" id="name" placeholder="Enter your G+ name" name="cf_name">
+              <input class="w-input" type="text" id="name" placeholder="Enter your G+ name" name="name">
 
            <label for="email"></label>
 
-             <input class="w-input" placeholder="Enter your email address" type="text"  id="email" name="cf_email" required="required">
+             <input class="w-input" placeholder="Enter your email address" type="text"  id="email" name="email" required="required">
 
-           <label for="message"></label>
 
-             <textarea class="w-input message" placeholder="Enter your Message Here" id="message" name="cf_message"></textarea><br>
+          <div class="checkbox-section">
+          <label for="area">Select your Area. <a href="https://www.google.com/url?q=https://www.google.com/maps/d/edit?mid%3DzNHEkAIpSmoI.ku_LsiPs9J4o&sa=D&usg=AFQjCNGJZSvYcAGrrDW5Bxcs7uabMBjKiA">View regional map</a>.</label>
+          <div class="area-checkboxes">
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="DT ATX" name="area" id="area" /> DT ATX</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Eastern Block" name="area" id="area" /> Eastern Block</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Far South ENL" name="area" id="area" /> Far South ENL</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="JADE" name="area" id="area" /> JADE</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Jedi Academy" name="area" id="area" /> Jedi Academy</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Norf Central" name="area" id="area" /> Norf Central</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Pflugerville and Pfarther" name="area" id="area" /> Pflugerville and Pfarther</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="San Marcos" name="area" id="area" /> San Marcos</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Southeastern Bloc" name="area" id="area" /> Southeastern Bloc</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="Southside Strikeforce" name="area" id="area" /> Southside Strikeforce</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="West Side Gang" name="area" id="area" /> West Side Gang</div>
+            <div class="area-checkbox"><input class="" type="checkbox" role="checkbox" value="West Wilco" name="area" id="area" /> West Wilco</div>
+          </div>
+        </div>
+
+           <label for="comment"></label>
+
+             <textarea class="w-input message" placeholder="Anything else you wish to add?" id="comment" name="comment"></textarea><br>
 
            <input class="button medium" type="submit" value="Send">
 
          </form>
+
+         <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
           <div class="w-form-done">
 
@@ -496,6 +517,7 @@
   <script src="js/headhesive.min.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/submitForm.js"></script>
 
   <!-- END JQUERY PLUGINS LOAD -->
 
