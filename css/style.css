@@ -328,8 +328,14 @@ h1.underline-dotted,h2.underline-dotted,h3.underline-dotted,h4.underline-dotted 
 }
 
 .center-fix {
-width: 80%;
-margin: auto;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .center-fix {
+    width: 100%;
+  }
 }
 
 /********************************************
