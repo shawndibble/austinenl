@@ -332,7 +332,7 @@ h1.underline-dotted,h2.underline-dotted,h3.underline-dotted,h4.underline-dotted 
   margin: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .center-fix {
     width: 100%;
   }
