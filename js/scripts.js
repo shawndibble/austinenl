@@ -24,22 +24,27 @@ $(document).ready(function() {
     offset: '55%'
   });
   $('.wp4').waypoint(function() {
-    $('.wp4').addClass('animated fadeInDown');
+    $('.wp4').addClass('animated fadeInUp');
   }, {
     offset: '75%'
   });
   $('.wp5').waypoint(function() {
-    $('.wp5').addClass('animated fadeInUp');
+    $('.wp5').addClass('animated fadeInUp delay-05s');
   }, {
     offset: '75%'
   });
   $('.wp6').waypoint(function() {
-    $('.wp6').addClass('animated fadeInDown');
+    $('.wp6').addClass('animated zoomIn delay-1s');
   }, {
     offset: '75%'
   });
     $('.wp7').waypoint(function() {
-    $('.wp7').addClass('animated fadeInRight');
+    $('.in1').addClass('animated fadeInRight');
+    $('.in2').addClass('animated fadeInRight delay-05s');
+    $('.in3').addClass('animated fadeInRight delay-1s');
+    $('.in4').addClass('animated fadeInRight delay-1-5s');
+    $('.in5').addClass('animated fadeInRight delay-2s');
+    $('.in6').addClass('animated fadeInUp delay-2s');
   }, {
     offset: '75%'
   });
@@ -55,7 +60,7 @@ $(document).ready(function() {
 
 
 
-      $( function() {        
+      $( function() {
         $( '#cbp-qtrotator' ).cbpQTRotator();
       } );
 
