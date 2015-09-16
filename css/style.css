@@ -1013,15 +1013,19 @@ margin-top: -25px;
 
 .area-checkboxes {
   display: -webkit-flex;
-   display: flex;
-  flex-direction: row;
+  display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .area-checkbox {
   padding: 0 10px;
-  flex-basis: 220px;
+  min-width: 250px
+  -webkit-flex: 1 1 250px;
+  flex: 1;
   text-align: left;
 }
 
