@@ -23,7 +23,7 @@ $('#input-form').on('submit',function(){
                               commentID + "=" + comment + "&" +
                               submitRef);
     $(this)[0].action=submitURL;
-    $('input, textarea').val('');
+    $('#handle, #gplus, #email, #comment').val('');
     $('input:checkbox').removeAttr('checked');
     $('.w-form-done').fadeIn().delay(5000).fadeOut();;
 });
