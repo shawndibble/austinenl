@@ -12,7 +12,7 @@
 
 /***************
 
-* Buttons 
+* Buttons
 
 ****************/
 .button:hover {
@@ -67,6 +67,12 @@
   background: none;
 }
 
+.button.border.filter:hover {
+	color: #333;
+	border: 2px solid #333;
+	background: none;
+}
+
 .button:hover {
   background: #56C16B;
   border: 2px solid #56C16B;
@@ -104,13 +110,13 @@ background: #c0392b;
 .text-green {
   color: #FFF;
 padding: 0 2px;
-background: #27AE60; 
+background: #27AE60;
 }
 
 
 /************************
 
-* icons box 
+* icons box
 
 ************************/
 .icon-box {
