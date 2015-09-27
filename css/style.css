@@ -289,7 +289,6 @@ h1.underline-dotted,h2.underline-dotted,h3.underline-dotted,h4.underline-dotted 
 
 .row-gree {
   background: #27AE60;
-  border-bottom: 1px solid #27ae60;
 }
 
 /*********************************************
@@ -661,7 +660,7 @@ background: #FFFFFF !important;
 }
 
 .filter {
-  margin: 4em 1em;
+  margin: 1em;
   cursor: pointer;
   cursor: 0;
   cursor: 0;
@@ -906,6 +905,10 @@ margin-top: -25px;
   transition: background 0.5s linear;
 }
 
+.circule-info .info {
+  padding-top:10px;
+}
+
 .popup-with-form:hover .circule {
   background: white;
 }
@@ -924,7 +927,7 @@ margin-top: -25px;
 }
 
 .info-x {
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
 .email {
@@ -1065,7 +1068,7 @@ margin-top: -25px;
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8 { visibility: hidden; }
+.wp1, .wp2, .wp3, .wp3-1, .wp4, .wp5, .wp6, .wp7, .wp8 { visibility: hidden; }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .zoomIn { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }

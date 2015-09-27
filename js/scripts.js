@@ -8,20 +8,22 @@ $(document).ready(function() {
   }, {
     offset: '75%'
   });
-   $('.wp8').waypoint(function() {
-    $('.wp8').addClass('animated fadeInLeft');
-  }, {
-    offset: '75%'
-  });
   $('.wp2').waypoint(function() {
     $('.wp2').addClass('animated fadeInUp');
   }, {
     offset: '75%'
   });
   $('.wp3').waypoint(function() {
-    $('.wp3').addClass('animated fadeInDown');
+    $('.fb1').addClass('animated fadeInLeft');
+    $('.fb2').addClass('animated fadeInDown');
+    $('.fb3').addClass('animated fadeInRight');
   }, {
     offset: '55%'
+  });
+  $('.wp3-1').waypoint(function() {
+    $('.wp3-1').addClass('animated zoomIn delay-05s');
+  }, {
+    offset: '75%'
   });
   $('.wp4').waypoint(function() {
     $('.wp4').addClass('animated fadeInUp');
@@ -45,6 +47,11 @@ $(document).ready(function() {
     $('.in4').addClass('animated fadeInRight delay-1-5s');
     $('.in5').addClass('animated fadeInRight delay-2s');
     $('.in6').addClass('animated fadeInUp delay-2s');
+  }, {
+    offset: '75%'
+  });
+  $('.wp8').waypoint(function() {
+    $('.wp8').addClass('animated fadeInLeft');
   }, {
     offset: '75%'
   });
@@ -77,7 +84,7 @@ $(document).ready(function() {
   	type: 'inline',
   	preloader: false,
   	focus: '#name',
-  
+
   	// When elemened is focused, some mobile browsers in some cases zoom in
   	// It looks not nice, so we disable it:
   	callbacks: {
