@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="css/normal.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/headhesive.css">
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
   <link href="css/animate.css" rel="stylesheet">
 
   <!-- END THEME STYLE -->
@@ -201,14 +202,6 @@
         <div id="cbp-qtrotator" class="cbp-qtrotator">
 
           <div class="cbp-qtcontent">
-            <img src="images/team/chiplander.jpg" alt="chiplander" />
-            <blockquote>
-              <p>Austin Enlightened is about community. They helped me level up, showed me how to play and helped me to become part of a great network of players. I'll never regret going green in Austin!</p>
-              <footer>agent chiplander</footer>
-            </blockquote>
-          </div>
-
-          <div class="cbp-qtcontent">
             <img src="images/team/bellaluna241.jpg" alt="bellaluna241" />
             <blockquote>
               <p>I love being on the ATX Enlightened team! It offers the perfect mix of fun, strategy, collaboration, game tips, social events, and ethical play and has made me a more successful player.</p>
@@ -221,6 +214,14 @@
             <blockquote>
               <p>Bursters and fields and cupcakes, oh my! AustinENL is here to help tadpoles become frogs and everyone have a good time. Come join us! Let's work together to keep humanity Enlightened.</p>
               <footer>agent sarcastomatic</footer>
+            </blockquote>
+          </div>
+
+          <div class="cbp-qtcontent">
+            <img src="images/team/chiplander.jpg" alt="chiplander" />
+            <blockquote>
+              <p>Austin Enlightened is about community. They helped me level up, showed me how to play and helped me to become part of a great network of players. I'll never regret going green in Austin!</p>
+              <footer>agent chiplander</footer>
             </blockquote>
           </div>
 
@@ -384,10 +385,19 @@
     <h2>Visitor's Form</h2>
 
     <label for="vhandle"></label>
-    <input class="w-input" type="text" id="vhandle" placeholder="Enter your in-game handle" name="vhandle">
+     <input class="w-input" type="text" id="handle" placeholder="Enter your in-game handle" name="handle" required="required" />
+
+    <label for="vhandle"></label>
+    <input class="w-input" type="text" id="vhandle" placeholder="Enter your in-game handle" name="vhandle" />
 
     <label for="vemail"></label>
-    <input class="w-input" placeholder="Enter your email address" type="text"  id="vemail" name="vemail" required="required">
+    <input class="w-input" placeholder="Enter your email address" type="text"  id="vemail" name="vemail" required="required" />
+
+    <label for="vorigin"></label>
+    <input class="w-input" placeholder="City of Origin", type="text" id="vorigin" name="vorigin" />
+
+    <label for="vdaterange"></label>
+    <input class="w-input" type="text" name="vdaterange" id="vdaterange" placeholder="Days you will be in Austin" />
 
     <input class="button medium" type="submit" value="Send">
 
@@ -429,15 +439,12 @@
             <form action="" id="input-form" target="no-target" method="post">
 
             <label for="handle"></label>
-
              <input class="w-input in1" type="text" id="handle" placeholder="Enter your in-game handle" name="handle">
 
              <label for="name"></label>
-
               <input class="w-input in2" type="text" id="name" placeholder="Enter your G+ name" name="name">
 
            <label for="email"></label>
-
              <input class="w-input in3" placeholder="Enter your email address" type="text"  id="email" name="email" required="required">
 
 
@@ -460,7 +467,6 @@
         </div>
 
            <label for="comment"></label>
-
              <textarea class="w-input message in5" placeholder="Anything else you wish to add?" id="comment" name="comment"></textarea><br>
 
            <input class="button medium in6" type="submit" value="Send">
@@ -517,6 +523,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/modernizr.js"></script>
   <script src="js/normal.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
   <script src="js/carousels.js"></script>
   <script src="js/jquery.stellar.js"></script>
   <script src="js/classie.js"></script>

@@ -58,18 +58,13 @@ $(document).ready(function() {
 
 });
 
-
-
-  $(document).ready(function() {
+$(document).ready(function() {
   var nice = $("html").niceScroll();  // The document page (body)
     $("#boxscroll").niceScroll({touchbehavior:true}); // First scrollable DIV
   });
-
-
-
-      $( function() {
-        $( '#cbp-qtrotator' ).cbpQTRotator();
-      } );
+  $( function() {
+    $( '#cbp-qtrotator' ).cbpQTRotator();
+  } );
 
   $(function(){
     $('#Grid').mixitup();
@@ -99,39 +94,26 @@ $(document).ready(function() {
   });
 
 });
+// Set options
+var options = {
+    offset: '#showHere',
+    classes: {
+        clone:   'banner--clone',
+        stick:   'banner--stick',
+        unstick: 'banner--unstick'
+    }
+};
 
-
-
-
-        // Set options
-        var options = {
-            offset: '#showHere',
-            classes: {
-                clone:   'banner--clone',
-                stick:   'banner--stick',
-                unstick: 'banner--unstick'
-            }
-        };
-
-        // Initialise with options
-        var banner = new Headhesive('.banner', options);
-
-        // Headhesive destroy
-        // banner.destroy();
+// Initialise with options
+var banner = new Headhesive('.banner', options);
 
 
 $('.parallax-back').stellar();
 $('.header-parallax').stellar();
 
-
-    $(function(){
-
-      $.stellar({
-
-        horizontalScrolling: false,
-
-        verticalOffset: 40
-
-      });
-
-    });
+$(function(){
+  $.stellar({
+    horizontalScrolling: false,
+    verticalOffset: 40
+  });
+});
