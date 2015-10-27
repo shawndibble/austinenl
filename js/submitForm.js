@@ -26,6 +26,7 @@ $('#input-form').on('submit',function(){
                               areaID + "=" + area + "&" +
                               commentID + "=" + comment + "&" +
                               submitRef);
+    console.log(submitURL);
     $(this)[0].action=submitURL;
     $('#handle, #gplus, #email, #comment').val('');
     $('input:checkbox').removeAttr('checked');
@@ -43,6 +44,8 @@ $('#visitor-form').on('submit',function(){
   var emailID = "entry.1860847224";
   var originID = "entry.346729811";
   var daterangeID = "entry.1260726591";
+  var baseURL = 'https://docs.google.com/forms/d/1FIEZ--oH5VGJa2pvjG9WVrSn7ojst4mxZZ6OTsP7w5M/formResponse?';
+  var submitRef = '&submit=Submit';
   var submitURL = (baseURL +
                             handleID + "=" + handle + "&" +
                             gplusID + "=" + gplus + "&" +
@@ -50,6 +53,7 @@ $('#visitor-form').on('submit',function(){
                             originID + "=" + origin + "&" +
                             daterangeID + "=" + daterange + "&" +
                             submitRef);
+  console.log(submitURL);
   $(this)[0].action=submitURL;
   $('#vhandle, #vgplus, #vemail, #vorigin, #vdaterange').val('');
   $('input:checkbox').removeAttr('checked');
