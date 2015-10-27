@@ -41,8 +41,8 @@ $('#visitor-form').on('submit',function(){
   var handleID = "entry.21828550";
   var gplusID = "entry.1407106735";
   var emailID = "entry.1860847224";
-  var originID = "";
-  var daterangeID = "";
+  var originID = "entry.346729811";
+  var daterangeID = "entry.1260726591";
   var submitURL = (baseURL +
                             handleID + "=" + handle + "&" +
                             gplusID + "=" + gplus + "&" +
