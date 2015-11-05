@@ -987,6 +987,10 @@ margin-top: -25px;
   opacity: 1.0;
 }
 
+.mfp-content {
+    max-width: 500px;
+}
+
 /***************************************
 
 * Contact us
