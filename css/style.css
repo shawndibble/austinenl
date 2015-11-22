@@ -94,7 +94,7 @@ h1 {
   letter-spacing: .075em;
   text-transform: uppercase;
   line-height: 1.5;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin-bottom: 25px;
 }
 
@@ -103,7 +103,7 @@ h2 {
   font-weight: 600;
   letter-spacing: .075em;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 2.5;
   font-size: 2em;
   margin-bottom: 25px;
 }
@@ -142,9 +142,9 @@ h6 {
   font-weight: 700;
 }
 
-@media (min-width: 550px) {
-  h1 {font-size: 3.5em}
-  h2 {font-size: 2.5em}
+@media (max-width: 550px) {
+  h1 {font-size: 2.5em}
+  h2 {font-size: 2.0em}
 }
 
 /* EXTRA LARGE HEADING */
@@ -1046,7 +1046,6 @@ margin-top: -25px;
 
 .area-checkbox {
   padding: 0 10px;
-  min-width: 250px;
   -webkit-flex: 1 1 250px;
   flex: 1;
   text-align: left;
