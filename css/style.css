@@ -29,6 +29,7 @@
 
 body,html {
   font-size: 100%;
+  width:100%;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -1035,7 +1036,6 @@ margin-top: -25px;
 }
 
 .area-checkboxes {
-  display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1046,9 +1046,8 @@ margin-top: -25px;
 
 .area-checkbox {
   padding: 0 10px;
-  min-width: 250px;
-  -webkit-flex: 1 1 250px;
-  flex: 1;
+  min-width: 230px;
+  display: block;
   text-align: left;
 }
 
